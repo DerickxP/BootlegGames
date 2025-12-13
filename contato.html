@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contato - BootlegGames</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="left"><h1>Contato</h1></div>
+</header>
+
+<main class="container">
+    
+    <form id="form-contato" class="card">
+        <label>Nome
+            <input name="nome" required>
+        </label>
+
+        <label>Email
+            <input type="email" name="email" required>
+        </label>
+
+        <label>Mensagem
+            <textarea name="mensagem" rows="4" required></textarea>
+        </label>
+
+        <button class="btn">Enviar</button>
+    </form>
+
+    <div id="msg-contato" class="muted"></div>
+
+</main>
+
+<script>
+document.getElementById("form-contato").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    document.getElementById("msg-contato").textContent =
+        "Mensagem enviada com sucesso (simulado).";
+    e.target.reset();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login - BootlegGames</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+    <main class="login-container">
+        <h2>BootlegGames</h2>
+        <p>Escolha como deseja entrar:</p>
+
+        <div class="login-buttons">
+            <button id="btn-admin" class="btn">
+                <i class="fas fa-user-shield"></i>
+                Entrar como Admin (DERICK)
+            </button>
+            <button id="btn-player" class="btn outline">
+                <i class="fas fa-gamepad"></i>
+                Entrar como Player (ANDERSON)
+            </button>
+        </div>
+
+        <div class="login-footer">
+            <p>Se é pirata, é aqui que joga!</p>
+        </div>
+    </main>
+
+    <script>
+    document.getElementById('btn-admin').onclick = () => {
+        localStorage.setItem("usuario_tipo", "admin");
+        location.href = "index.html";
+    };
+
+    document.getElementById('btn-player').onclick = () => {
+        localStorage.setItem("usuario_tipo", "player");
+        location.href = "index.html";
+    };
+    </script>
+</body>
+</html>

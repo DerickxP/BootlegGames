@@ -172,7 +172,7 @@ document.getElementById('sf-linkedin')?.setAttribute('href','https://www.linkedi
 document.getElementById('sf-instagram')?.setAttribute('href','https://www.instagram.com/derickportela_/');
 
 // Rodapé
-document.getElementById('link-github')?.setAttribute('href','ttps://github.com/andersnruann');
+document.getElementById('link-github')?.setAttribute('href','https://github.com/andersnruann');
 document.getElementById('link-linkedin')?.setAttribute('href','https://www.linkedin.com/in/andersnruann/');
 document.getElementById('link-instagram')?.setAttribute('href','https://www.instagram.com');
 

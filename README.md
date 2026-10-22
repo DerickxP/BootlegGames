@@ -1,121 +1,49 @@
-# 🎮 BootlegGames
+# BootlegGames: loja de jogos fictícia
 
-<!-- Status & Context -->
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![Projeto Acadêmico](https://img.shields.io/badge/projeto-acadêmico-blue)
-![Portfólio](https://img.shields.io/badge/uso-portfólio-success)
-
-<!-- Linguagens -->
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-003B57?logo=databricks&logoColor=white)
-
-<!-- Outros -->
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-> *“Se é pirata, é aqui que joga! Porque pagar é overrated.”* 🏴‍☠️
+Front-end de uma loja de jogos online fictícia e satírica, com catálogo, busca,
+filtro por gênero, página de detalhes e um painel de administração, tudo em HTML,
+CSS e JavaScript puro, sem back-end.
 
----
+> Projeto acadêmico da disciplina de Web Coding, feito em dupla. A "loja pirata" é só
+> o tom humorístico do trabalho: o projeto é fictício, educacional e **não incentiva a
+> pirataria**.
 
-## 📌 Sobre o Projeto
+## Funcionalidades
 
-**BootlegGames** é um site fictício e satírico de venda de jogos online, desenvolvido como **projeto acadêmico da disciplina de Web Coding**.
+- **Catálogo** com 30 jogos, busca por nome e filtro por gênero (RPG, ação, indie,
+  terror, sobrevivência).
+- **Detalhes do jogo** com gênero, preço e descrição.
+- **Dois perfis**, escolhidos na tela de login e guardados no `localStorage`:
+  - **Admin:** adiciona e remove jogos pelo painel administrativo;
+  - **Player:** navega pelo catálogo e faz compras simuladas.
+- **Páginas** de início, sobre, contato (envio simulado) e login.
 
-A proposta do projeto utiliza uma narrativa descontraída inspirada em uma “loja pirata”, **sem qualquer incentivo à pirataria real**, sendo o foco exclusivo no aprendizado técnico e acadêmico.
+## Como rodar
 
-Mesmo com o tom humorístico, o projeto foi desenvolvido com atenção a:
-- organização e legibilidade de código
-- separação de responsabilidades
-- boas práticas de front-end
-- simulação de funcionalidades reais de um e-commerce
+Não há build nem dependências: abra `login.html` no navegador, ou sirva a pasta:
 
----
+```bash
+python3 -m http.server 8000   # http://localhost:8000/login.html
+```
 
-## 🚧 Estado Atual
+## Estado atual
 
-Atualmente, este repositório contém **somente o front-end da aplicação**, incluindo:
+- Só o front-end. Login, compras e envio de contato são simulados.
+- Jogos adicionados ou removidos pelo admin ficam só na memória da página e voltam
+  ao catálogo original ao recarregar.
+- A integração com um banco de dados relacional, desenvolvido em outra disciplina,
+  está planejada para persistir usuários, catálogo e compras.
 
-- HTML semântico
-- CSS para layout e identidade visual
-- JavaScript puro (Vanilla JS) para lógica de interface
-- Simulação de autenticação e permissões via `localStorage`
+## Autores
 
-⚠️ **Não há conexão ativa com banco de dados neste momento.**
+- **Derick Portela**: [GitHub](https://github.com/DerickxP) · [LinkedIn](https://www.linkedin.com/in/derickportela/)
+- **Anderson Ruan**: [GitHub](https://github.com/andersnruann) · [LinkedIn](http://www.linkedin.com/in/ruan-anderson-b4957a330)
 
----
+## Licença
 
-## 🗄️ Banco de Dados (Integração Futura)
-
-O projeto **será integrado futuramente** a um banco de dados relacional desenvolvido **em outra disciplina de Banco de Dados**, utilizando **SQL**.
-
-Planejado para incluir:
-- persistência real de usuários
-- catálogo de jogos dinâmico
-- controle de estoque
-- histórico de compras
-- autenticação real no back-end
-
-🔄 O projeto seguirá em desenvolvimento até sua finalização completa.
-
----
-
-## 👤 Perfis de Usuário (Simulado)
-
-- **Admin**
-  - adiciona e remove jogos
-  - acesso ao painel administrativo
-
-- **Player**
-  - navegação pelo catálogo
-  - visualização de detalhes
-  - compras simuladas
-
-> A diferenciação de usuários é feita apenas para fins didáticos.
-
----
-
-## 🧪 Tecnologias Utilizadas
-
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
-- **LocalStorage** (simulação)
-- **SQL** *(fase futura / outro repositório)*
-
----
-
-## 🎯 Objetivo Acadêmico
-
-Este projeto busca demonstrar:
-- domínio dos fundamentos de desenvolvimento web
-- construção de interfaces interativas
-- integração entre disciplinas (Web Coding + Banco de Dados)
-- evolução contínua de um projeto completo
-
-Também faz parte do meu **portfólio profissional**, com atualizações progressivas.
-
----
-## 👨‍💻 Autores
-
-### **Derick Portela**  
-📌 Estudante de Ciências da Computação  
-
-- GitHub: [@DerickxP](https://github.com/DerickxP)
-- LinkedIn: [derickportela](https://www.linkedin.com/in/derickportela/)
-
-### **Anderson Ruan**  
-📌 Estudante de Ciências da Computação  
-
-- GitHub: [@andersnruann](https://github.com/andersnruann)
-- LinkedIn: [ruan-anderson-b4957a330](http://www.linkedin.com/in/ruan-anderson-b4957a330)
-
----
-
-
-## ⚠️ Aviso Legal
-
-Este projeto é **totalmente fictício e educacional**.  
-Nenhum conteúdo possui finalidade comercial ou incentivo à pirataria.
-
----
+[MIT](LICENSE)
